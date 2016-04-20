@@ -1,0 +1,61 @@
+.loading {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	text-align: center;
+	display: table;
+	display: none;
+}
+
+.loading-icon {
+	display: table-cell;
+	vertical-align: middle;
+	color: #fff;
+}
+
+th {
+	cursor: pointer;
+}
+
+.pagination {
+	margin: 0px;
+}
+
+.btn-cadastrar {
+    width: 50px;
+    height: 50px;
+	padding-top: 12.5px;
+    padding-left: 15px;
+    border-radius: 25px;
+	position: fixed;
+	z-index: 1000;
+	bottom: 5%;
+	right: 3%;
+}
+
+.btn-cadastrar:after {
+	padding-top: 30px;
+}
+
+.rodapeTabela {
+	text-align: center;
+}
+
+.menu-recursos {
+	width: auto !important;
+	border: 0px;
+	margin-top: 0.5em;
+}
+
+.menu-recursos ul {
+	list-style: none;
+	padding: 1.0em; 
+}
+
+.border-error {
+	border: 1px solid #d9534f;
+}
