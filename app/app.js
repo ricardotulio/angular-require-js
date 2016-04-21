@@ -1,9 +1,9 @@
-define(
+define("app",
 	[
 		"modules/autenticacao/config/module.config"
 	], 
 	function() {
-		var app = angular.module("app", ["ui.router"]).config(config);
+		angular.module("app", ["ui.router", "app.autenticacao"]).config(config);
 
 		config.$inject = ["$stateProvider", "$urlRouterProvider"];
 
@@ -25,7 +25,5 @@ define(
 					abstract: true
 				});
 		}
-
-		return app;
 	}
 );

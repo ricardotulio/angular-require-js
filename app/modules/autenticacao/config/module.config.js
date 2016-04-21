@@ -1,4 +1,7 @@
-define([], function() {
+define([
+		"modules/autenticacao/controllers/login.controller"
+	], 
+	function() {
 		angular.module("app.autenticacao", []).config(config);
 
 		config.$inject = ["$stateProvider", "$urlRouterProvider"];
@@ -7,14 +10,8 @@ define([], function() {
 			$stateProvider.
 				state("login", {
 					url: "/login",
-					templateUrl: "app/modules/autenticacao/views/login.html",
-					controller: "LoginController"
+					templateUrl: "app/modules/autenticacao/views/login.html"
 				});
-		}
-
-		require([
-			"modules/autenticacao/controllers/login.controller",
-			"modules/autenticacao/controllers/logout.controller"
-		]);
+		}	
 	}
 );

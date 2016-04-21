@@ -1,13 +1,10 @@
-<div class="container-fluid login-page">
+<div class="container-fluid login-page" ng-app="app.autenticacao">
 	<div class="login-box">
 		<div class="login-logo">
-        	<a><b>Admin</b>MN</a>
+        	<a><b>Admin</b>LTE</a>
         </div><!-- /.login-logo -->
         <div class="login-box-body">
         	<form role="form" name="form">
-	        	<div id="mensagemLogin" class="alert alert-{{classeErro}} ng-hide" ng-show="mensagemErroServidor">
-					<strong>{{mensagemErro}}
-				</div>{{mensagemErroServidor}}
 	            <div class="form-group has-feedback">
 	            	<input type="text" class="form-control" ng-model="usuario.login" ng-required="true" placeholder="Login">
 	            	<span class="glyphicon glyphicon-user form-control-feedback"></span>
@@ -17,12 +14,8 @@
 	            	<span class="glyphicon glyphicon-lock form-control-feedback"></span>
 	            </div>
 	            <div class="row">
-	            	<div class="col-xs-8">
-		                <div class="checkbox icheck">
-		                </div>
-	              	</div><!-- /.col -->
-		            <div class="col-xs-4">
-		            	<button ng-click="form.$valid && validacaoLogin(usuario) ? login(usuario) : submitted = false" class="btn btn-primary btn-block btn-flat">Entrar</button>
+		            <div class="col-xs-4 pull-right">
+		            	<button type="button" ng-click="login()" class="btn btn-primary btn-block btn-flat">Entrar</button>
 					</div><!-- /.col -->
 				</div>
 			</form>
